@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+        input {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 1rem;
+        }
+        button {
+            padding: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>User Details Form</h2>
+    <form action="https://formsubmit.co/ronshtar@gmail.com" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+        
+        <!-- Optional fields -->
+        <input type="hidden" name="_subject" value="New Submission!">
+        <input type="hidden" name="_captcha" value="false">
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
